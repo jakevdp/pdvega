@@ -1,6 +1,6 @@
 sphinx
 jinja2
 numpydoc
-vega3
+vega
 vega_datasets
 pandas
