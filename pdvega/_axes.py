@@ -1,4 +1,3 @@
-from vega3 import VegaLite
 
 
 class MaxRowsExceeded(ValueError):
