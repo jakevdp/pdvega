@@ -27,7 +27,8 @@ the user explicitly turns that requirement off in the JSON spec.
 ``pdvega`` is not designed to give easy access to every option available in the Altair or, more broadly, the Vega-Lite schema, but it is possible to modify the specification manually. Any chart object ``pdvega`` produces is a complete Altair Chart object, that can be modified directly. In particular, if you look at the options for `chart.encoding`_, you can see that there is a ``"scale"`` property of the "x" encoding which allows turning off the zero behavior.
 
 .. pdvega-setup::
-
+    
+    import altair as alt
     from vega_datasets import data
     iris = data.iris()
     plot = iris.vgplot(kind='scatter', x='sepalLength', y='petalLength', c='species')
